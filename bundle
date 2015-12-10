@@ -1,0 +1,4 @@
+package foreign-env
+package pbcopy
+theme default
+theme gitstatus
