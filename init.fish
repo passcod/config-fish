@@ -25,4 +25,6 @@ abbr e $EDITOR
 abbr fig docker-compose
 abbr nvm nn
 abbr shall 'ls -shal'
+abbr tbuf 'tmux show-buffer'
+abbr tcopy 'tmux show-buffer | copy'
 abbr x 'chmod +x'
