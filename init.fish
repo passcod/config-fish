@@ -6,6 +6,7 @@ set PATH ~/.rbenv/plugins/ruby-build/bin $PATH
 set PATH ~/.rbenv/bin $PATH
 set PATH (xdg-dir data)/bin $PATH
 set PATH ~/.composer/vendor/bin $PATH
+set PATH ~/.cargo/bin $PATH
 set PATH (xdg-dir data)/npm/bin $PATH
 
 set -gx EDITOR nvim
@@ -16,7 +17,12 @@ source ~/bin/functions.fish
 source (rbenv init -|psub)
 
 eval (hub alias -s)
-nn latest
+
+if test ! -e (xdg-dir cache)/nn.lock
+  touch (xdg-dir cache)/nn.lock
+  nn latest
+  rm (xdg-dir cache)/nn.lock
+end
 
 abbr b bundle
 abbr be 'bundle exec'
