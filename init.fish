@@ -27,6 +27,7 @@ abbr be 'bundle exec'
 abbr bu 'bundle update'
 abbr e $EDITOR
 abbr fig docker-compose
+abbr g 'git'
 abbr nvm nn
 abbr s 'sudo'
 abbr shall 'ls -shal'
