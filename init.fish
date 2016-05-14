@@ -4,6 +4,7 @@ set fish_greeting
 set PATH ~/bin $PATH
 set PATH (xdg-dir data)/bin $PATH
 set PATH ~/.composer/vendor/bin $PATH
+set PATH (gem environment gempath | cut -d: -f1) $PATH
 set PATH ~/.cargo/bin $PATH
 set PATH (xdg-dir data)/npm/bin $PATH
 
@@ -27,6 +28,7 @@ abbr bu 'bundle update'
 abbr e $EDITOR
 abbr fig docker-compose
 abbr nvm nn
+abbr s 'sudo'
 abbr shall 'ls -shal'
 abbr tbuf 'tmux show-buffer'
 abbr tcopy 'tmux show-buffer | copy'
