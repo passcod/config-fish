@@ -4,7 +4,7 @@ set fish_greeting
 set PATH ~/bin $PATH
 set PATH (xdg-dir data)/bin $PATH
 set PATH ~/.composer/vendor/bin $PATH
-set PATH (gem environment gempath | cut -d: -f1) $PATH
+set PATH (gem environment gempath | cut -d: -f1)/bin $PATH
 set PATH ~/.cargo/bin $PATH
 set PATH (xdg-dir data)/npm/bin $PATH
 
