@@ -10,7 +10,7 @@ set PATH (xdg-dir data)/npm/bin $PATH
 
 set -gx EDITOR nvim
 set -gx N_PREFIX (xdg-dir data)
-set -gx GEM_HOME ~/.gem
+set -gx GEM_HOME (gem environment gempath | cut -d: -f1)
 
 source ~/bin/aliases
 source ~/bin/functions.fish
