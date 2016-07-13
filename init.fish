@@ -23,6 +23,7 @@ if test ! -e (xdg-dir cache)/nn.lock
   rm (xdg-dir cache)/nn.lock
 end
 
+abbr + 'git add'
 abbr b bundle
 abbr be 'bundle exec'
 abbr bu 'bundle update'
