@@ -28,7 +28,7 @@ eval (hub alias -s)
 
 if test ! -e (xdg-dir cache)/nn.lock
   touch (xdg-dir cache)/nn.lock
-  nn latest
+  nn lts
   rm (xdg-dir cache)/nn.lock
 end
 
