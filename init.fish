@@ -1,16 +1,25 @@
 set fish_greeting
 
-# PATHs are in reversed order
-set PATH ~/bin $PATH
-set PATH (xdg-dir data)/bin $PATH
-set PATH ~/.composer/vendor/bin $PATH
-set PATH (gem environment gempath | cut -d: -f1)/bin $PATH
-set PATH ~/.cargo/bin $PATH
-set PATH (xdg-dir data)/npm/bin $PATH
+set PATH $PATH \
+  /usr/bin/vendor_perl \
+  /usr/lib/emscripten \
+  ~/bin
+
+# 'xdg-dir' is in ~/bin
+
+set PATH $PATH \
+  (xdg-dir data)/bin \
+  ~/.composer/vendor/bin \
+  (gem environment gempath | cut -d: -f1)/bin \
+  ~/.cargo/bin \
+  (xdg-dir data)/npm/bin
 
 set -gx EDITOR nvim
 set -gx N_PREFIX (xdg-dir data)
 set -gx GEM_HOME (gem environment gempath | cut -d: -f1)
+
+set -gx FZF_DEFAULT_COMMAND 'ag -g ""'
+set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 
 source ~/bin/aliases
 source ~/bin/functions.fish
@@ -32,6 +41,7 @@ abbr fig docker-compose
 abbr g 'git'
 abbr nvm nn
 abbr s 'sudo'
+abbr § 'sudo systemctl'
 abbr shall 'ls -shal'
 abbr tbuf 'tmux show-buffer'
 abbr tcopy 'tmux show-buffer | copy'
