@@ -26,10 +26,10 @@ source ~/bin/functions.fish
 
 eval (hub alias -s)
 
-if test ! -e (xdg-dir cache)/nn.lock
-  touch (xdg-dir cache)/nn.lock
+if test ! -e /tmp/nn.lock
+  touch /tmp/nn.lock
   nn lts
-  rm (xdg-dir cache)/nn.lock
+  rm /tmp/nn.lock
 end
 
 abbr + 'git add'
