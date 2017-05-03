@@ -7,12 +7,13 @@ set PATH $PATH \
 
 # 'xdg-dir' is in ~/bin
 
-set PATH $PATH \
+set PATH \
   (xdg-dir data)/bin \
   ~/.composer/vendor/bin \
   (gem environment gempath | cut -d: -f1)/bin \
   ~/.cargo/bin \
-  (xdg-dir data)/npm/bin
+  (xdg-dir data)/npm/bin \
+  $PATH
 
 set -gx EDITOR nvim
 set -gx N_PREFIX (xdg-dir data)
