@@ -2,7 +2,6 @@ set fish_greeting
 
 set PATH $PATH \
   /usr/bin/vendor_perl \
-  /usr/lib/emscripten \
   ~/bin
 
 # 'xdg-dir' is in ~/bin
@@ -39,10 +38,11 @@ abbr be 'bundle exec'
 abbr bu 'bundle update'
 abbr e $EDITOR
 abbr fig docker-compose
-abbr g 'git'
-abbr nvm nn
+abbr g git
+abbr n npm
+abbr ni 'npm i'
 abbr s 'sudo'
-abbr § 'sudo systemctl'
+abbr sss 'sudo systemctl'
 abbr shall 'ls -shal'
 abbr tbuf 'tmux show-buffer'
 abbr tcopy 'tmux show-buffer | copy'
