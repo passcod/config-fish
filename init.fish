@@ -11,7 +11,6 @@ set PATH \
   ~/.composer/vendor/bin \
   (gem environment gempath | cut -d: -f1)/bin \
   ~/.cargo/bin \
-  (xdg-dir data)/npm/bin \
   $PATH
 
 set -gx EDITOR nvim
