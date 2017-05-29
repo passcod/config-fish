@@ -31,6 +31,7 @@ if test ! -e /tmp/nn.lock
   rm /tmp/nn.lock
 end
 
+abbr : rg
 abbr + 'git add'
 abbr b bundle
 abbr be 'bundle exec'
@@ -39,6 +40,7 @@ abbr e $EDITOR
 abbr fig docker-compose
 abbr g git
 abbr n npm
+abbr nn n
 abbr ni 'npm i'
 abbr s 'sudo'
 abbr sss 'sudo systemctl'
