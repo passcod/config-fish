@@ -25,12 +25,6 @@ source ~/bin/functions.fish
 
 eval (hub alias -s)
 
-if test ! -e /tmp/nn.lock
-  touch /tmp/nn.lock
-  nn lts
-  rm /tmp/nn.lock
-end
-
 abbr : rg
 abbr + 'git add'
 abbr b bundle
