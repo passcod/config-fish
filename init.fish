@@ -23,6 +23,7 @@ set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 source ~/bin/aliases
 source ~/bin/functions.fish
 
+source (npx --shell-auto-fallback fish | psub)
 eval (hub alias -s)
 
 abbr : rg
