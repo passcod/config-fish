@@ -8,7 +8,7 @@ set PATH $PATH \
 
 set PATH \
   (xdg-dir data)/bin \
-  ~/.composer/vendor/bin \
+  (xdg-dir config)/composer/vendor/bin \
   (gem environment gempath | cut -d: -f1)/bin \
   ~/.cargo/bin \
   $PATH
@@ -27,6 +27,7 @@ source (npx --shell-auto-fallback fish | psub)
 eval (hub alias -s)
 
 abbr : rg
+abbr :i 'rg -i'
 abbr + 'git add'
 abbr b bundle
 abbr be 'bundle exec'
