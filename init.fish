@@ -1,17 +1,34 @@
 set fish_greeting
 
-set PATH $PATH \
-  /usr/bin/vendor_perl \
-  ~/bin
+function add_path -d "Add directory to PATH if it exists"
+  if test $argv[1] = "prepend"
+    set mode prepend
+    set pdir $argv[2]
+  else
+    set mode append
+    set pdir $argv[1]
+  end
+
+  # echo $pdir
+
+  if test -d $pdir
+    if test $mode = "prepend"
+      set PATH $pdir $PATH
+    else
+      set PATH $PATH $pdir
+    end
+  end
+end
+
+add_path /usr/bin/vendor_perl
+add_path ~/bin
 
 # 'xdg-dir' is in ~/bin
 
-set PATH \
-  (xdg-dir data)/bin \
-  (xdg-dir config)/composer/vendor/bin \
-  (gem environment gempath | cut -d: -f1)/bin \
-  ~/.cargo/bin \
-  $PATH
+add_path prepend $HOME/.cargo/bin
+add_path prepend (gem environment gempath | cut -d: -f1)/bin
+add_path prepend (xdg-dir config)/composer/vendor/bin
+add_path prepend (xdg-dir data)/bin
 
 set -gx EDITOR nvim
 set -gx N_PREFIX (xdg-dir data)
