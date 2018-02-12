@@ -45,6 +45,7 @@ eval (hub alias -s)
 
 abbr : rg
 abbr :i 'rg -i'
+abbr :z 'rg -z'
 abbr + 'git add'
 abbr ↓ 'git up'
 abbr ↑ 'git push'
