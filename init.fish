@@ -31,6 +31,7 @@ add_path prepend (xdg-dir config)/composer/vendor/bin
 add_path prepend (xdg-dir data)/bin
 
 set -gx EDITOR nvim
+
 set -gx N_PREFIX (xdg-dir data)
 set -gx GEM_HOME (gem environment gempath | cut -d: -f1)
 
@@ -50,6 +51,7 @@ abbr + 'git add'
 abbr ↓ 'git up'
 abbr ↑ 'git push'
 abbr ← 'git commit -am'
+abbr atom. 'atom .'
 abbr b bundle
 abbr be 'bundle exec'
 abbr bu 'bundle update'
