@@ -23,6 +23,7 @@ add_path $HOME/bin
 
 # 'xdg-dir' is in ~/bin
 
+add_path prepend /usr/lib/ccache/bin
 add_path prepend $HOME/.cargo/bin
 add_path prepend (gem environment gempath | cut -d: -f1)/bin
 add_path prepend (xdg-dir config)/composer/vendor/bin
