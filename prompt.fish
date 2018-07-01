@@ -19,17 +19,31 @@ set __fish_git_prompt_char_dirtystate '×'
 set __fish_git_prompt_char_stagedstate '→'
 set __fish_git_prompt_char_untrackedfiles '§'
 set __fish_git_prompt_char_stashstate '↩'
-set __fish_git_prompt_char_upstream_ahead '⇑'
-set __fish_git_prompt_char_upstream_behind '⇓'
+set __fish_git_prompt_char_upstream_ahead ' 🡩 '
+set __fish_git_prompt_char_upstream_behind ' 🡫 '
 
 function fish_prompt
   set last_status $status
+
+  set_color -o black
+  printf '[%s] ' (hostname | cut -d . -f 1)
+  set_color normal
 
   set_color $fish_color_cwd
   printf '%s' (prompt_pwd)
   set_color normal
 
-  printf '%s ' (__fish_git_prompt)
+  set_color -o
+  printf '%s' (__fish_git_prompt)
+  set_color normal
+
+  printf ' '
 
   set_color normal
+end
+
+function fish_right_prompt
+    set_color -o black
+    date '+%H:%M:%S'
+    set_color normal
 end
