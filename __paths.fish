@@ -19,7 +19,7 @@ function add_path -d "Add directory to PATH if it exists"
 end
 
 add_path /usr/bin/vendor_perl
-add_path ~/bin
+add_path $HOME/bin
 
 # 'xdg-dir' is in ~/bin
 
