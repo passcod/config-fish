@@ -26,6 +26,12 @@ set __fish_git_prompt_char_upstream_behind ' 🡫 '
 function fish_prompt
   set last_status $status
 
+  if test ! -z "$SSH_TTY" -o ! -z "$SSH_CLIENT"
+    set_color -o red
+    printf '[SSH] '
+    set_color normal
+  end
+
   set_color -o black
   printf '[%s] ' (hostname | cut -d . -f 1)
   set_color normal
