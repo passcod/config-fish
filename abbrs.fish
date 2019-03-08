@@ -15,6 +15,7 @@ abbr c cargo
 abbr e $EDITOR
 abbr fig docker-compose
 abbr g git
+abbr ls lx
 abbr n npm
 abbr nn n
 abbr ni 'npm i'
