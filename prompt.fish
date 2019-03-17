@@ -32,8 +32,12 @@ function fish_prompt
     set_color normal
   end
 
-  set_color -o black
-  printf '[%s] ' (hostname | cut -d . -f 1)
+  set_color -do blue
+  printf '['
+  set_color purple
+  printf '%s' (hostname | cut -d . -f 1)
+  set_color blue
+  printf '] '
   set_color normal
 
   set_color $fish_color_cwd
