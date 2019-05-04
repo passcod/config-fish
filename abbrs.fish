@@ -21,6 +21,7 @@ abbr nn n
 abbr ni 'npm i'
 abbr s 'sudo'
 abbr sss 'sudo systemctl'
+abbr ssu 'systemctl --user'
 abbr shall 'ls -shal'
 abbr tbuf 'tmux show-buffer'
 abbr tc 'tmux show-buffer | copy'
