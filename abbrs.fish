@@ -19,6 +19,7 @@ abbr ls lx
 abbr n npm
 abbr nn n
 abbr ni 'npm i'
+abbr p pnpm
 abbr s 'sudo'
 abbr sss 'sudo systemctl'
 abbr ssu 'systemctl --user'
