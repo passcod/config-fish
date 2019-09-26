@@ -17,10 +17,9 @@ abbr e $EDITOR
 abbr fig docker-compose
 abbr g git
 abbr ls lx
-abbr n npm
+abbr n pnpm
 abbr nn n
-abbr ni 'npm i'
-abbr p pnpm
+abbr ni 'pnpm i'
 abbr s 'sudo'
 abbr sss 'sudo systemctl'
 abbr ssu 'systemctl --user'
