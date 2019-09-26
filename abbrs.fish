@@ -12,6 +12,7 @@ abbr b bundle
 abbr be 'bundle exec'
 abbr bu 'bundle update'
 abbr c cargo
+abbr co composer
 abbr e $EDITOR
 abbr fig docker-compose
 abbr g git
