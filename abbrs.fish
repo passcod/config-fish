@@ -16,6 +16,7 @@ abbr co composer
 abbr e $EDITOR
 abbr fig docker-compose
 abbr g git
+abbr j journalctl
 abbr ls lx
 abbr n pnpm
 abbr nn n
