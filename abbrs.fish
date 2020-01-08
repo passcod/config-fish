@@ -22,9 +22,10 @@ abbr n pnpm
 abbr nn n
 abbr ni 'pnpm i'
 abbr s 'sudo'
+abbr shall 'lx -SalHigh --git -@'
+abbr slx 'sudo exa'
 abbr sss 'sudo systemctl'
 abbr ssu 'systemctl --user'
-abbr shall 'lx -SalHigh --git -@'
 abbr tbuf 'tmux show-buffer'
 abbr tc 'tmux show-buffer | copy'
 abbr tcopy 'tmux show-buffer | copy'
