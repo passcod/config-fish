@@ -8,13 +8,13 @@ abbr ↑↑↑ 'git push -f'
 abbr ← 'git commit -am'
 abbr ←←← 'git commit --amend -aC HEAD'
 abbr atom. 'atom .'
+abbr code. 'code .'
 abbr b bundle
 abbr be 'bundle exec'
 abbr bu 'bundle update'
 abbr c cargo
 abbr co composer
 abbr e $EDITOR
-abbr fig docker-compose
 abbr g git
 abbr j journalctl
 abbr ls lx
@@ -23,10 +23,10 @@ abbr nn n
 abbr ni 'pnpm i'
 abbr s 'sudo'
 abbr shall 'lx -SalHigh --git -@'
-abbr slx 'sudo exa'
+abbr sls 'sudo exa'
+abbr sshall 'sudo exa -SalHigh --git -@'
 abbr sss 'sudo systemctl'
 abbr ssu 'systemctl --user'
 abbr tbuf 'tmux show-buffer'
-abbr tc 'tmux show-buffer | copy'
 abbr tcopy 'tmux show-buffer | copy'
 abbr x 'chmod +x'
