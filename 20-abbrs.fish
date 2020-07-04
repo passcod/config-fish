@@ -17,6 +17,7 @@ abbr co composer
 abbr e $EDITOR
 abbr g git
 abbr j journalctl
+abbr k kubectl
 abbr ls lx
 abbr n pnpm
 abbr nn n
