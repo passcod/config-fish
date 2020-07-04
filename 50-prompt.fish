@@ -35,7 +35,7 @@ function fish_prompt
   set_color -do blue
   printf '['
   set_color purple
-  printf '%s' (hostname | cut -d . -f 1)
+  printf '%s' (cat /etc/hostname | cut -d . -f 1)
   set_color blue
   printf '] '
   set_color normal
