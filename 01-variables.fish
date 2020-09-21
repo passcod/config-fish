@@ -1,6 +1,7 @@
 set fish_greeting ''
 
 set -gx EDITOR nvim
+set -gx VISUAL vscode
 
 set -gx N_PREFIX (xdg-dir data)
 set -gx GEM_HOME (gem environment gempath | cut -d: -f1)
