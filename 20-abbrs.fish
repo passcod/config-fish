@@ -13,6 +13,7 @@ abbr b bundle
 abbr be 'bundle exec'
 abbr bu 'bundle update'
 abbr c cargo
+abbr ci 'ionice -t -c idle nice -n10 cargo install'
 abbr co composer
 abbr e $EDITOR
 abbr g git
