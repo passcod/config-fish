@@ -1,2 +1,28 @@
+format = "[#](italic black) $all"
+
 [character]
 success_symbol = "[;](bold green)"
+error_symbol = "[;](bold red)"
+
+[status]
+disabled = false
+format = "[#❗$status]($style) "
+
+[directory]
+fish_style_pwd_dir_length = 1
+
+[cmd_duration]
+show_notifications = true
+
+[battery]
+disabled = true
+
+[git_status]
+format = '([\[](black)[$all_status$ahead_behind]($style)[\]](black) )'
+style = "italic blue"
+
+modified = "~"
+staged = '[+$count](italic green) '
+ahead = "⇡ ${count}"
+diverged = "⇕ ${ahead_count}⇣ ${behind_count}"
+behind = "⇣ ${count}"
