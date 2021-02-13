@@ -11,11 +11,14 @@ format = "[#❗$status]($style) "
 [directory]
 fish_style_pwd_dir_length = 1
 
+[hostname]
+format = '[\[](black)[$hostname]($style)[\]](black) '
+style = "dimmed fg:purple"
+
+ssh_only = false
+
 [cmd_duration]
 show_notifications = true
-
-[battery]
-disabled = true
 
 [git_status]
 format = '([\[](black)[$all_status$ahead_behind]($style)[\]](black) )'
@@ -32,3 +35,24 @@ untracked = "[§](italic bold red)"
 ahead = "[⇡ ${count}](italic green)"
 diverged = "[⇡ ${ahead_count} ⇣ ${behind_count}](italic green)"
 behind = "[⇣ ${count}](italic green)"
+
+[username]
+format = "[$user]($style) on "
+
+[package]
+display_private = true
+
+[battery]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[php]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
