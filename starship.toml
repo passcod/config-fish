@@ -21,8 +21,14 @@ disabled = true
 format = '([\[](black)[$all_status$ahead_behind]($style)[\]](black) )'
 style = "italic blue"
 
-modified = "~"
-staged = '[+$count](italic green) '
-ahead = "⇡ ${count}"
-diverged = "⇕ ${ahead_count}⇣ ${behind_count}"
-behind = "⇣ ${count}"
+modified = "[~](italic bold yellow)"
+staged = "[→ ${count}](italic yellow)"
+stashed = "[← ${count}](italic yellow)"
+
+conflicted = "[=](italic bold red)"
+
+untracked = "[§](italic bold red)"
+
+ahead = "[⇡ ${count}](italic green)"
+diverged = "[⇡ ${ahead_count} ⇣ ${behind_count}](italic green)"
+behind = "[⇣ ${count}](italic green)"
