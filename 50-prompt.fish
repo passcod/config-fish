@@ -1,4 +1,5 @@
 if which starship >/dev/null 2>&1
+  set -x STARSHIP_CONFIG $HOME/.config/fish/conf.d/starship.toml
   starship init fish | source
 else
   set normal (set_color normal)
