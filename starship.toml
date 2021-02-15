@@ -42,6 +42,9 @@ format = "[$user]($style) on "
 [package]
 display_private = true
 
+[aws]
+disabled = true
+
 [battery]
 disabled = true
 
