@@ -19,6 +19,8 @@ abbr d docker
 abbr e $EDITOR
 abbr g git
 abbr j journalctl
+abbr jf 'journalctl -f'
+abbr jfu 'journalctl -fu'
 abbr k kubectl
 abbr ls lx
 abbr n pnpm
