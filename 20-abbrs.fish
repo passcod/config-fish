@@ -16,6 +16,7 @@ abbr c cargo
 abbr ci 'ionice -t -c idle nice -n10 cargo install'
 abbr co composer
 abbr d docker
+abbr doc docker-compose
 abbr e $EDITOR
 abbr g git
 abbr j journalctl
