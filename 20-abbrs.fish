@@ -23,6 +23,7 @@ abbr j journalctl
 abbr jf 'journalctl -f'
 abbr jfu 'journalctl -fu'
 abbr k kubectl
+abbr la 'lx -SalHigh --git'
 abbr ls lx
 abbr n pnpm
 abbr nn n
