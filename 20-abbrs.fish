@@ -36,5 +36,6 @@ abbr sss 'sudo systemctl'
 abbr ssu 'systemctl --user'
 abbr tbuf 'tmux show-buffer'
 abbr tcopy 'tmux show-buffer | copy'
+abbr tjq 'tmux show-buffer | jq'
 abbr x 'chmod +x'
 abbr ya yarn
