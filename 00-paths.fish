@@ -43,3 +43,4 @@ add_path prepend $HOME/.radicle/bin
 add_path prepend (gem environment gempath | cut -d: -f1)/bin
 add_path prepend (xdg-dir config)/composer/vendor/bin
 add_path prepend (xdg-dir data)/bin
+add_path prepend (xdg-dir data)/../bin
