@@ -25,7 +25,7 @@ abbr g git
 abbr j journalctl
 abbr jf 'journalctl -f'
 abbr jfu 'journalctl -fu'
-abbr k kalker
+abbr k rink
 abbr la 'lx -SalHigh --git'
 abbr ls lx
 abbr n pnpm
