@@ -29,9 +29,8 @@ abbr jfu 'journalctl -fu'
 abbr k rink
 abbr la 'lx -SalHigh --git'
 abbr ls lx
-abbr n pnpm
+abbr n npm
 abbr nn n
-abbr ni 'pnpm i'
 abbr s 'sudo'
 abbr shall 'lx -SalHigh --git -@'
 abbr sls 'sudo exa'
