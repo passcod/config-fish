@@ -30,7 +30,9 @@ abbr k rink
 abbr la 'lx -SalHigh --git'
 abbr ls lx
 abbr n npm
+abbr ni 'npm i'
 abbr nn n
+abbr p pulumi
 abbr s 'sudo'
 abbr shall 'lx -SalHigh --git -@'
 abbr sls 'sudo exa'

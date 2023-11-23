@@ -11,9 +11,9 @@ function add_path -d "Add directory to PATH if it exists"
 
   if test -d $pdir
     if test $mode = "prepend"
-      set PATH $pdir $PATH
+      fish_add_path --prepend $pdir
     else
-      set PATH $PATH $pdir
+      fish_add_path --append $pdir
     end
   end
 end
@@ -32,6 +32,9 @@ if test ! -z "$WSLENV"
 end
 
 add_path /usr/bin/vendor_perl
+add_path $HOME/.pulumi/bin
+add_path $HOME/.krew/bin
+add_path $HOME/.linkerd2/bin
 add_path $HOME/bin
 
 # 'xdg-dir' is in ~/bin
