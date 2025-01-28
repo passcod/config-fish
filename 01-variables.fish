@@ -13,6 +13,8 @@ set -gx DOCKER_BUILDKIT 1
 
 set -gx DEPLOYS_SSH_HOME "$HOME/.vault/ssh/kare-kun"
 
+set -gx QT_QPA_PLATFORM wayland
+
 if echo "$SHELL" | grep -q '/profiled-fish$'
     set -gx SHELL (which fish)
 end
