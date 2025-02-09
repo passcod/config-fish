@@ -44,4 +44,3 @@ abbr tcopy 'tmux show-buffer | copy'
 abbr tjq 'tmux show-buffer | jq'
 abbr uv 'units --verbose'
 abbr x 'chmod +x'
-abbr ya yarn
