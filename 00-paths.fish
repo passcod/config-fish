@@ -1,21 +1,21 @@
 function add_path -d "Add directory to PATH if it exists"
-  if test $argv[1] = "prepend"
-    set mode prepend
-    set pdir $argv[2]
-  else
-    set mode append
-    set pdir $argv[1]
-  end
-
-  # echo $pdir
-
-  if test -d $pdir
-    if test $mode = "prepend"
-      fish_add_path --prepend $pdir
+    if test $argv[1] = prepend
+        set mode prepend
+        set pdir $argv[2]
     else
-      fish_add_path --append $pdir
+        set mode append
+        set pdir $argv[1]
     end
-  end
+
+    # echo $pdir
+
+    if test -d $pdir
+        if test $mode = prepend
+            fish_add_path --prepend $pdir
+        else
+            fish_add_path --append $pdir
+        end
+    end
 end
 
 # On WSL2
