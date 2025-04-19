@@ -33,8 +33,7 @@ end
 
 add_path /usr/bin/vendor_perl
 add_path $HOME/.pulumi/bin
-add_path $HOME/.krew/bin
-add_path $HOME/.linkerd2/bin
+add_path $HOME/.lmstudio/bin
 add_path $HOME/bin
 
 # 'xdg-dir' is in ~/bin
