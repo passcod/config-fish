@@ -1,7 +1,19 @@
 set fish_greeting ''
 
-set -gx EDITOR nvim
-set -gx VISUAL nvim
+if command --query nvim
+    set -gx EDITOR nvim
+else if command --query vim
+    set -gx EDITOR vim
+else if command --query helix
+    set -gx EDITOR helix
+else if command --query nano
+    set -gx EDITOR nano
+else if command --query vi
+    set -gx EDITOR vi
+else
+    echo "NO VIABLE EDITOR -- Install nano or vim or something!!!" >&2
+end
+set -gx VISUAL $EDITOR
 
 set -gx N_PREFIX (xdg-dir data)
 set -gx GEM_HOME (gem environment gempath | cut -d: -f1)
