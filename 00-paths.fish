@@ -20,15 +20,15 @@ end
 
 # On WSL2
 if test ! -z "$WSLENV"
-  if test -z "$XDG_RUNTIME_DIR"
-    if test ! -d /run/user/passcod
-      sudo mkdir /run/user/passcod
-      sudo chown passcod /run/user/passcod
-      sudo chmod 0777 /run/user/passcod
-    end
+    if test -z "$XDG_RUNTIME_DIR"
+        if test ! -d /run/user/passcod
+            sudo mkdir /run/user/passcod
+            sudo chown passcod /run/user/passcod
+            sudo chmod 0777 /run/user/passcod
+        end
 
-    set -x XDG_RUNTIME_DIR /run/user/passcod
-  end
+        set -x XDG_RUNTIME_DIR /run/user/passcod
+    end
 end
 
 add_path /usr/bin/vendor_perl
