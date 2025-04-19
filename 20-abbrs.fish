@@ -33,11 +33,10 @@ abbr n npm
 abbr ni 'npm i'
 abbr nn n
 abbr p pulumi
-abbr s 'sudo'
+abbr s 'run0'
+abbr se "run0 $EDITOR"
 abbr shall 'lx -SalHigh --git'
-abbr sls 'sudo exa'
-abbr sshall 'sudo exa -SalHigh --git'
-abbr sss 'sudo systemctl'
+abbr sss 'systemctl'
 abbr ssu 'systemctl --user'
 abbr tbuf 'tmux show-buffer'
 abbr tcopy 'tmux show-buffer | copy'
