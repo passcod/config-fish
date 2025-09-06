@@ -24,14 +24,15 @@ abbr j journalctl
 abbr jf 'journalctl -f'
 abbr jfu 'journalctl -fu'
 abbr k rink
+abbr ku kubectl
 abbr la 'lx -SalHigh'
 abbr ls lx
 abbr n npm
 abbr ni 'npm i'
 abbr nn n
 abbr p pulumi
-abbr s 'run0'
-abbr se "run0 $EDITOR"
+abbr s runzero
+abbr se "runzero $EDITOR"
 abbr shall 'lx -SalHigh --git'
 abbr sss 'systemctl'
 abbr ssu 'systemctl --user'
