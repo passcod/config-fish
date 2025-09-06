@@ -10,8 +10,6 @@ abbr ←← 'git commit -am'
 abbr ←←← 'git commit --amend'
 abbr ←←←← 'git commit --amend -C HEAD'
 abbr ←←←←← 'git commit --amend -C HEAD -a'
-abbr atom. 'atom .'
-abbr code. 'code .'
 abbr b bundle
 abbr be 'bundle exec'
 abbr bu 'bundle update'
