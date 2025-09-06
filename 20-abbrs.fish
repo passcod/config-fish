@@ -1,6 +1,5 @@
-abbr : rg
-abbr :i 'rg -i'
-abbr :z 'rg -z'
+abbr rgi 'rg -i'
+abbr rgz 'rg -z'
 abbr + 'git add'
 abbr ↓ 'git up'
 abbr ↑ 'git push'
