@@ -20,7 +20,19 @@ ssh_only = false
 [cmd_duration]
 show_notifications = true
 
+# Jujutsu integration using wrapper until native support lands
+# https://github.com/starship/starship/pull/7224
+# cargo binstall -y jj-starship
+[custom.jj]
+when = "jj-starship detect"
+shell = ["jj-starship"]
+format = "$output "
+[git_branch]
+disabled = true
 [git_status]
+disabled = true
+
+#[git_status]
 format = '([\[](black)[$all_status$ahead_behind]($style)[\]](black) )'
 style = "italic blue"
 
