@@ -20,9 +20,6 @@ abbr d docker
 abbr doc docker-compose
 abbr e $EDITOR
 abbr g git
-abbr j journalctl
-abbr jf 'journalctl -f'
-abbr jfu 'journalctl -fu'
 abbr k rink
 abbr ku kubectl
 abbr la 'lx -SalHigh'
