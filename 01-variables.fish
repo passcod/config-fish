@@ -28,3 +28,5 @@ set -gx QT_QPA_PLATFORM wayland
 if echo "$SHELL" | grep -q '/profiled-fish$'
     set -gx SHELL (which fish)
 end
+
+set -gx CURL_VERSION (curl --version | head -n1 | cut -d\  -f2)
